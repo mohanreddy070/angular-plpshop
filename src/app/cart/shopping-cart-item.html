@@ -3,6 +3,16 @@
   <img src={{product.url}} class="fixwidth" alt="product image" />
   <div class="caption clearfix">
     <h5><a href={{product.url}}>{{product.name}}</a></h5>
+   
+ 
+  <ngb-rating 
+  [(rate)]="currentRate" 
+  [starTemplate]="t" 
+  [readonly]="true" 
+  max="5">
+  </ngb-rating>
+<hr>
+<pre>Rate: <b>{{currentRate}}</b></pre>
     <div class="product__price">{{product.price}} {{product.currency}}</div>
     <div class="product__button-wrap">
       <button  *ngIf="product.added"  (click)="RemoveProduct(product)" class="btn btn-primary">Remove

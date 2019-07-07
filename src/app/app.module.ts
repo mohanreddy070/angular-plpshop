@@ -13,10 +13,11 @@ import {HttpModule} from '@angular/http';
 import shoppingCartItem from './cart/shopping-cart-item';
 import shoppingList from './cart/shopping-list';
 import {cartService} from './cart/cartService';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
     imports: [
-        BrowserModule, FormsModule, HttpModule
+        BrowserModule, FormsModule, HttpModule, NgbModule,
     ],
     declarations: [
         AppComponent,

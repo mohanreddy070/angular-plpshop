@@ -4,6 +4,7 @@ import {product} from '../product';
 @Component({selector: 'shopping-cart-item', templateUrl: './shopping-cart-item.html'})
 
 export default class shoppingCartItem {
+   currentRate = 8;
     @Input()product : product;
     constructor(private _cartService : cartService) {}
     AddProduct(_product : product) {
