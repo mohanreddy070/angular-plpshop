@@ -1,6 +1,7 @@
 import {cartService} from './cartService';
 import {Component, Input} from '@angular/core';
 import {product} from '../product';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 @Component({selector: 'shopping-cart-item', templateUrl: './shopping-cart-item.html'})
 
 export default class shoppingCartItem {
