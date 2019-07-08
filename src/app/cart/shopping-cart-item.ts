@@ -5,7 +5,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 @Component({selector: 'shopping-cart-item', templateUrl: './shopping-cart-item.html'})
 
 export default class shoppingCartItem {
-   currentRate = 8;
+   currentRate = 3.15;
     @Input()product : product;
     constructor(private _cartService : cartService) {}
     AddProduct(_product : product) {
