@@ -27,6 +27,7 @@ export class cartService {
     }
 
   getAllProducts() : Observable <any> {
+    console.log('hi');
     return this
       .httpclient
       .get(url)
