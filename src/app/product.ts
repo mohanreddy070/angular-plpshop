@@ -1,6 +1,5 @@
 export class product {
-  constructor(public id: number, public name: String, public price: Number, public currency: Number, public image: String,
-  public url: String ) { }
+  constructor(public productId: number, public name: string, public price: number, public currency: string, public image: string, public url: String, public rating: number) { }
 }
 
 export const productsCollection = [
