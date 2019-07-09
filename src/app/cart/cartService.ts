@@ -9,7 +9,7 @@ import { Subject } from 'rxjs/Subject';
 
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
-const url = 'http://localhost:3000/api'
+const url = 'http://localhost:8080/get'
 @Injectable()
 export class cartService {
   constructor(private httpclient : HttpClient) {}

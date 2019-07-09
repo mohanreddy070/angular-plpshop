@@ -13,6 +13,6 @@ export default class shoppingCart implements OnInit {
     Products : product[]
     ngOnInit(){
       // ocking as this ide doesn't support server side 
-       this.Products = productsCollection;
+       this.Products = this.cart_Service.getAllProducts() ;
     }
 }
