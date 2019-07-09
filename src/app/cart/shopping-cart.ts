@@ -14,6 +14,7 @@ export default class shoppingCart implements OnInit {
     ngOnInit(){
       // ocking as this ide doesn't support server side 
       //console.log(this.cart_Service.getAllProducts());
-       this.Products =  productsCollection;
+      //this.Products =  productsCollection;
+      this.Products =  this.cart_Service.getAllProducts;
     }
 }

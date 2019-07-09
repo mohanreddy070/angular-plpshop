@@ -6,7 +6,7 @@ import {Response, Request} from '@angular/http';
 @Component({selector: 'my-app', templateUrl: './app.component.html'})
 export class AppComponent implements OnInit {
     constructor(private Http : HttpClient) {
-        this.URL ='http://localhost:8080/post';
+        this.URL ='http://localhost:8080/get';
     }
     cart : product[];
     URL : string;

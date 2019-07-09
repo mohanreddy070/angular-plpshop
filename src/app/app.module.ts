@@ -6,7 +6,7 @@ import {AppComponent} from './app.component';
 import HeaderComponent from './header/app-header';
 import FooterComponent from './footer/app-footer';
 import {LoaderService} from './loader/loader-service';
-import {HttpClient, HttpClientModule} from '@angular/common/http';
+import {HttpClient} from './http.service';
 import shoppingCart from './cart/shopping-cart';
 //import {LocalStorageService} from './local.storage.service';
 import {HttpModule} from '@angular/http';
