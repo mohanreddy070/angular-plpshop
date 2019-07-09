@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { map, catchError, tap } from 'rxjs/operators'; 
+import {product} from '../product'
+
 @Injectable()
 export class CartService {
 
@@ -20,7 +22,7 @@ private extractData(res: Response) {
 }
 
 getProducts(): Observable<any> {
-  return this.http.get(this.endpoint + 'get').pipe(
+  return this.http.get<product[]>(this.endpoint + 'get').pipe(
     map(this.extractData));
 }
 
