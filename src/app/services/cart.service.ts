@@ -20,7 +20,7 @@ private extractData(res: Response) {
 }
 
 getProducts(): Observable<any> {
-  return this.http.get(this.endpoint + 'products').pipe(
+  return this.http.get(this.endpoint + 'get').pipe(
     map(this.extractData));
 }
 

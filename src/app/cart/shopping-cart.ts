@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {cartService} from './cartService';
+import {CartService} from '../services/cart.service';
 import {product} from '../product';
 import {productsCollection} from '../product';
 @Component({
@@ -8,12 +9,12 @@ import {productsCollection} from '../product';
 })
 
 export default class shoppingCart implements OnInit {
-    constructor(private cart_Service :cartService){
+    constructor(private cart_Service :CartService){
     }
     Products : product[]
     ngOnInit(){
       // ocking as this ide doesn't support server side 
-      console.log(this.cart_Service.getAllProducts());
-       this.Products = this.cart_Service.getAllProducts() ;
+      //console.log(this.cart_Service.getAllProducts());
+       this.Products = this.cart_Service.getProducts() ;
     }
 }
