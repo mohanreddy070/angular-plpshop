@@ -29,4 +29,10 @@ export default class shoppingCart implements OnInit {
       return a.price - b.price;
     });
    }
+
+    descendingRatingData() {
+    return this.Products.sort((a, b) => {
+      return b.rating - a.rating;
+    });
+  }
 }

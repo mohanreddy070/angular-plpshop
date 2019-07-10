@@ -6,13 +6,13 @@
    
  
   <ngb-rating 
-  [(rate)]={{product.rating}}
+  [(rate)]="product.rating" 
   [starTemplate]="t" 
   [readonly]="true" 
   max="5">
   </ngb-rating>
 <hr>
-<pre>Rate: <b>{{currentRate}}</b></pre>
+<pre>Rate: <b>{{product.rating}}</b></pre>
     <div class="product__price">{{product.price}} {{product.currency}}</div>
     <div class="product__button-wrap">
       <button  *ngIf="product.added"  (click)="RemoveProduct(product)" class="btn btn-primary">Remove

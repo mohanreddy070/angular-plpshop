@@ -1,5 +1,16 @@
-<button (click)="descendingPriceData()" class="btn btn-primary">Price high-Low</button>
-<button (click)="ascendingPriceData()" class="btn btn-primary">Price Low-High</button>
+<div class="row">
+  <div class="col">
+    <div ngbDropdown class="d-inline-block">
+      <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Toggle dropdown</button>
+      <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+        <button ngbDropdownItem (click)="descendingPriceData()" >Price high-Low</button>
+        <button ngbDropdownItem (click)="ascendingPriceData()" >Price Low-High</button>
+        <button ngbDropdownItem (click)="descendingRatingData()" >Average Rating</button>
+      </div>
+    </div>
+  </div>
+
+
 <ul className="clearfix">
   <li *ngFor="let product of Products" >
     <shopping-cart-item [product]="product" ></shopping-cart-item>
