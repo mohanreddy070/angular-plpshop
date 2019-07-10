@@ -40,4 +40,8 @@ getTotal() {
             .subscription
             .unsubscribe();
     }
+
+    buy(){
+      
+    }
 }
