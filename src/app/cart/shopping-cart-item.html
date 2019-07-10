@@ -1,4 +1,3 @@
-
 <div class="thumbnail">
   <img src={{product.url}} class="fixwidth" alt="product image" />
   <div class="caption clearfix">
@@ -13,7 +12,7 @@
   </ngb-rating>
 <hr>
 <pre>Rate: <b>{{product.rating}}</b></pre>
-    <div class="product__price"> {{product.currency}} {{product.price}}</div>
+    <div class="product__price">{{product.currency}} {{product.price * (100-product.discount)/100 | number : '1.2-2'}}<del> {{product.currency}} {{product.price}}</del>  {{product.discount}}%Off</div>
     <div class="product__button-wrap">
       <button  *ngIf="product.added"  (click)="RemoveProduct(product)" class="btn btn-primary">Remove
       </button>
