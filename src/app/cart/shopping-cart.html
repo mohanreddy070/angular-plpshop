@@ -1,3 +1,5 @@
+<button (click)="descendingPriceData()" class="btn btn-primary">Price high-Low</button>
+<button (click)="ascendingPriceData()" class="btn btn-primary">Price Low-High</button>
 <ul className="clearfix">
   <li *ngFor="let product of Products" >
     <shopping-cart-item [product]="product" ></shopping-cart-item>
