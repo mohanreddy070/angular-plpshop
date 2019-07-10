@@ -1,13 +1,12 @@
 <div class="panel panel-default">
   <div class="panel-body">
      <ul>
-       <li *ngFor="let item of products"  class="cart-item">
+       <li *ngFor="let item of products "  class="cart-item">
          <span class="cart-item__name">{{item.name}}</span>
-         <span class="cart-item__preprice">                 {{item.price}}</span>
-         <span class="cart-item__price">{{item.price * (100-item.discount)/100}}</span>
+         <span class="cart-item__price">{{item.price * (100-item.discount)/100 | number : '1.2-2'}} <del>{{item.price}}</del></span>
        </li>
      </ul>
-    <div class="cart__total">Total:{{ getTotal() }} </div>
+    <div class="cart__total">Total:{{ getTotal()  | number : '1.2-2'}} </div>
        <div class="buy">
         <button (onclick)="buy()" >BUY</button>
        </div>
