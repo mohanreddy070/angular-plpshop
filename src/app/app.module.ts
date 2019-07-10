@@ -14,6 +14,7 @@ import shoppingCartItem from './cart/shopping-cart-item';
 import shoppingList from './cart/shopping-list';
 import {cartService} from './cart/cartService';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { BiComponent } from './Bi/bi/bi.component';
 
 @NgModule({
     imports: [
@@ -26,7 +27,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
         LoaderComponent,
         shoppingCart,
         shoppingCartItem,
-        shoppingList
+        shoppingList,
+        BiComponent
     ],
     providers: [
         LoaderService, HttpClient, cartService,
