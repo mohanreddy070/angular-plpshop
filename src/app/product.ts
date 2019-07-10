@@ -1,5 +1,5 @@
 export class product {
-  constructor(public productId: number, public name: string, public price: number, public currency: string, public image: string, public url: String, public rating: number, public discount:number) { }
+  constructor(public productId: number, public name: string, public price: number, public currency: string, public image: string, public url: String, public rating: number, public discount:number,public category: string) { }
 }
 
 export const productsCollection = [
@@ -11,17 +11,19 @@ export const productsCollection = [
     image: 'images/01.jpg',
     url: 'https://static2.jassets.com/p/Puma-917-Mid-2.0-Ind.-Blue-Sneakers-4118-935263-1-product2.jpg',
     rating: 4,
-    discount:10
+    discount:10,
+    category: 'shoes'
   },
   {
     id: 2,
-    name: 'Adidas sports shoes',
-    price: 249.99,
+    name: 'Fastrack Watch',
+    price: 2999.99,
     currency: '₹',
     image: 'images/02.jpg',
-    url: 'http://scene7.zumiez.com/is/image/zumiez/pdp_hero/adidas-Flashback-White-%26-Black-Shoes-_272010-front-US.jpg',
-    rating: 4.5,
-    discount:15
+    url: 'https://images-na.ssl-images-amazon.com/images/I/915LDVhdUEL._UL1500_.jpg',
+    rating: 3.9,
+    discount:35,
+    category: 'Watches'
   },
   {
     id: 4,
@@ -31,17 +33,19 @@ export const productsCollection = [
     image: 'images/04.jpg',
     url: 'https://images-na.ssl-images-amazon.com/images/I/810h11HFM3L._UY395_.jpg',
     rating: 3.4,
-    discount:30
+    discount:30,
+    category: 'shoes'
   },
   {
     id: 6,
-    name: 'PUMA sports ',
-    price: 119.99,
+    name: 'Nokia',
+    price: 999.99,
     currency: '₹',
     image: 'images/06.jpg',
-    url: 'http://assets.myntassets.com/assets/images/1920391/2017/6/8/11496905404701-Adidas-Men-Sports-Shoes-3121496905404588-5.jpg',
+    url: 'https://images-na.ssl-images-amazon.com/images/I/41OEaFm1EcL.jpg',
     rating: 4.1,
-     discount:25
+    discount:25,
+    category: 'Mobiles'
   },
   {
     id: 5,
@@ -51,7 +55,8 @@ export const productsCollection = [
     image: 'images/05.jpg',
     url: 'https://images-na.ssl-images-amazon.com/images/I/81t38mrch6L._UL1500_.jpg',
     rating: 2.9,
-    discount:40
+    discount:40,
+    category: 'shoes'
   },
   {
     id: 3,
@@ -61,7 +66,8 @@ export const productsCollection = [
     image: 'images/03.jpg',
     url: 'https://cdn.shopclues.com/images/thumbnails/37609/320/320/INDUSNBLREDb14634988211480324580.jpg',
     rating: 3.5,
-     discount:40
+     discount:40,
+    category: 'shoes'
   },
   {
     id: 9,
@@ -71,6 +77,44 @@ export const productsCollection = [
     image: 'images/01.jpg',
     url: 'https://images-na.ssl-images-amazon.com/images/I/81t38mrch6L._UL1500_.jpg',
     rating: 4.6,
-    discount:30
+    discount:30,
+    category: 'shoes'
+  },
+  {
+    id: 8,
+    name: 'Vivo',
+    price: 15000.00,
+    currency: '₹',
+    image: 'images/08.jpg',
+    url: 'https://images-na.ssl-images-amazon.com/images/I/61Kj514S4WL._SL1200_.jpg',
+    rating: 3.9,
+    discount:10,
+    category: 'Mobiles'
+  },
+
+   {
+    id: 15,
+    name: 'iPhone 6s',
+    price: 45000.00,
+    currency: '₹',
+    image: 'images/10.jpg',
+    url: 'https://images-na.ssl-images-amazon.com/images/I/519KIlHA2wL._SL1024_.jpg',
+    rating: 4.2,
+    discount:20,
+    category: 'Mobiles'
+  },
+
+{
+    id: 20,
+    name: 'Titan',
+    price: 4000.00,
+    currency: '₹',
+    image: 'images/10.jpg',
+    url: 'https://images-na.ssl-images-amazon.com/images/I/71PsMNWiDRL._UL1500_.jpg',
+    rating: 2.9,
+    discount:15,
+    category: 'Watches'
   }
+
+ 
 ];
