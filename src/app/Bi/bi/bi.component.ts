@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { } from '../../ass';
-import * as CanvasJS from '../';
+import * as CanvasJS from '../assets/canvasjs.min'';
 
 @Component({
   selector: 'app-bi',
