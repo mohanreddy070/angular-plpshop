@@ -37,9 +37,16 @@ export default class shoppingCart implements OnInit {
   }
 
  categoryShoes(){
-    return this.Products.filter((a) => {
-      return a.category == 'shoes';
-    });
+   console.log('hi');
+    return this.Products.filter(     
+       a => a.category==='shoes');
  }
+ isBigEnough(element, index, array) { 
+   console.log('hi2');
+   //b: boolean = (element.category === 'shoes');
+   //console.log(b);
+   //return b; 
+   return (element.category === 'shoes');
+} 
 
 }

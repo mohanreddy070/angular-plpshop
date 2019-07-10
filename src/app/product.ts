@@ -1,5 +1,5 @@
 export class product {
-  constructor(public productId: number, public name: string, public price: number, public currency: string, public image: string, public url: String, public rating: number, public discount:number,public category: string) { }
+  constructor(public productId: number, public name: string, public price: number, public currency: string, public image: string, public url: String, public rating: number, public discount:number,public category: string, ) { }
 }
 
 export const productsCollection = [
