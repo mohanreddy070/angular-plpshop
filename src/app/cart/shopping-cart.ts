@@ -11,6 +11,9 @@ export default class shoppingCart implements OnInit {
     constructor(private cart_Service :cartService){
     }
     Products : product[]
+
+  shoes='shoes';
+
     ngOnInit(){
       // ocking as this ide doesn't support server side 
       //console.log(this.cart_Service.getAllProducts());
@@ -37,9 +40,9 @@ export default class shoppingCart implements OnInit {
   }
 
  categoryShoes(){
-   console.log('hi');
     return this.Products.filter(     
-       a => a.category==='shoes');
+       a =>{ console.log('hi');
+       return false;});
  }
  isBigEnough(element, index, array) { 
    console.log('hi2');
