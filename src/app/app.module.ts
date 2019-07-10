@@ -15,10 +15,16 @@ import shoppingList from './cart/shopping-list';
 import {cartService} from './cart/cartService';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BiComponent } from './Bi/bi/bi.component';
+import { CartAppComponent } from './cart/cart-app/cart-app.component';
+import{Routes,RouterModule} from '@angular/router';
 
+const appRoutes:Routes=[
+{path:'',component:CartAppComponent},
+    {path:'bi',component:BiComponent},
+]
 @NgModule({
     imports: [
-        BrowserModule, FormsModule, HttpModule, NgbModule,
+        BrowserModule, FormsModule, HttpModule, NgbModule,RouterModule.forRoot(appRoutes),
     ],
     declarations: [
         AppComponent,
@@ -28,7 +34,8 @@ import { BiComponent } from './Bi/bi/bi.component';
         shoppingCart,
         shoppingCartItem,
         shoppingList,
-        BiComponent
+        BiComponent,
+        CartAppComponent
     ],
     providers: [
         LoaderService, HttpClient, cartService,
