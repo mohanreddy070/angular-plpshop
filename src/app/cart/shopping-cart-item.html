@@ -13,8 +13,7 @@
   </ngb-rating>
 <hr>
 <pre>Rate: <b>{{product.rating}}</b></pre>
-    <div class="product__price">{{product.price}} {{product.currency}}</div>
-    <div class="product__finalprice">{{product.price}}*(100-{{product.discount}})/100 {{product.currency}}</div>
+    <div class="product__price"> {{product.currency}} {{product.price}}</div>
     <div class="product__button-wrap">
       <button  *ngIf="product.added"  (click)="RemoveProduct(product)" class="btn btn-primary">Remove
       </button>

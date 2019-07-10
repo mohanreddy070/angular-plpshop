@@ -15,7 +15,7 @@ getTotal() {
     let total = 0;
     for (var i = 0; i < this.products.length; i++) {
         if (this.products[i].price) {
-            total += (this.products[i].price *(100-this.products[i].) );
+            total += (this.products[i].price *(100-this.products[i].discount)/100 );
             this.totalamount = total;
         }
     }
