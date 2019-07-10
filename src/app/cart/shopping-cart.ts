@@ -35,4 +35,11 @@ export default class shoppingCart implements OnInit {
       return b.rating - a.rating;
     });
   }
+
+ categoryShoes(){
+    return this.Products.filter((a) => {
+      return a.category ='shoes';
+    });
+ }
+
 }

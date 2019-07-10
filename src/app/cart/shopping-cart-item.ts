@@ -21,4 +21,6 @@ export default class shoppingCartItem {
             .removeProduct(_product.id);
     }
 
+   
+
 }
