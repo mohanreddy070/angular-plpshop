@@ -21,7 +21,7 @@ export const productsCollection = [
     currency: '₹',
     image: 'images/02.jpg',
     url: 'https://images-na.ssl-images-amazon.com/images/I/915LDVhdUEL._UL1500_.jpg',
-    rating: 3.9,
+    rating: 4.8,
     discount:35,
     category: 'Watches'
   },
@@ -39,11 +39,11 @@ export const productsCollection = [
   {
     id: 6,
     name: 'Nokia',
-    price: 999.99,
+    price: 8999.99,
     currency: '₹',
     image: 'images/06.jpg',
     url: 'https://images-na.ssl-images-amazon.com/images/I/41OEaFm1EcL.jpg',
-    rating: 4.1,
+    rating: 4.0,
     discount:25,
     category: 'Mobiles'
   },
@@ -111,7 +111,18 @@ export const productsCollection = [
     currency: '₹',
     image: 'images/10.jpg',
     url: 'https://images-na.ssl-images-amazon.com/images/I/71PsMNWiDRL._UL1500_.jpg',
-    rating: 2.9,
+    rating: 4.9,
+    discount:15,
+    category: 'Watches'
+  },
+  {
+    id: 22,
+    name: 'Titan',
+    price: 4000.00,
+    currency: '₹',
+    image: 'images/10.jpg',
+    url: 'https://images-na.ssl-images-amazon.com/images/I/81nj6IlZpVL._UL1500_.jpg',
+    rating: 5.0,
     discount:15,
     category: 'Watches'
   }
