@@ -76,7 +76,7 @@ export const productsCollection = [
     currency: '₹',
     image: 'images/01.jpg',
     url: 'https://images-na.ssl-images-amazon.com/images/I/81t38mrch6L._UL1500_.jpg',
-    rating: 4.6,
+    rating: 3.9,
     discount:30,
     category: 'shoes'
   },
